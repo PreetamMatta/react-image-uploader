@@ -60,8 +60,8 @@ const ImageUploader = ({ uponUploadSuccess }) => {
       onDrop={handleDrop}
       ref={uploadBoxRef}
     >
-      <h1>IMAGE UPLOADER</h1>
-      <h3>Drag and Drop your Image here</h3>
+      <h1>TEXT EXTRACTION TOOL</h1>
+      <h3>Select your file or Drag and Drop your Image here</h3>
       <input
         type="file"
         multiple

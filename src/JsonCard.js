@@ -36,7 +36,7 @@ const JsonCard = ({ jsonData }) => {
 
   return (
     <div style={cardStyles}>
-      <h2>JSON Data</h2>
+      <h2>Extracted Data</h2>
       <table style={tableStyles}>
         <thead>
           <tr>
