@@ -9,8 +9,8 @@ const JsonFetcher = ({ fileNameWithExtension }) => {
   useEffect(() => {
     const fetchJsonData = async () => {
       try {
-        // Wait for 5 minutes (300,000 milliseconds)
-        await new Promise((resolve) => setTimeout(resolve, 6000));
+        // Wait for 5 seconds (300,000 milliseconds)
+        await new Promise((resolve) => setTimeout(resolve, 12000));
         const fileName = fileNameWithExtension.replace(/\.[^/.]+$/, "");
         console.log(fileName);
 
