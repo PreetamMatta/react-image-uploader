@@ -14,9 +14,16 @@ function App() {
   };
 
   return (
-    <div className="container">
-      <ImageUploader uponUploadSuccess={handleImageUploadSuccess} />
-      {imageUploaded && <JsonFetcher fileNameWithExtension={fileName} />}
+    <div>
+      <img
+        src="/KubeDox.jpg" // Replace with the path to your logo image
+        alt="Logo"
+        className="logo" // You can style the logo using CSS
+      />
+      <div className="container">
+        <ImageUploader uponUploadSuccess={handleImageUploadSuccess} />
+        {imageUploaded && <JsonFetcher fileNameWithExtension={fileName} />}
+      </div>
     </div>
   );
 }

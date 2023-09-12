@@ -4,10 +4,12 @@ const JsonCard = ({ jsonData }) => {
   // Use this to display without Null values
   // const keyValueArray = Object.entries(jsonData);
   // Use the below to eliminate null entries
-  const keyValueArray = Object.entries(jsonData).filter(([key, value]) => {
-    return value !== null && value !== "";
-  });
-  // You can add your own CSS styles for the card and table here
+  const keyValueArray = Object.entries(jsonData)
+    .filter(([key, value]) => {
+      return value !== null && value !== "";
+    })
+    .sort((a, b) => a[0].localeCompare(b[0]));
+
   const cardStyles = {
     border: "1px solid #ccc",
     padding: "16px",
@@ -32,6 +34,7 @@ const JsonCard = ({ jsonData }) => {
   const tdStyles = {
     border: "1px solid #ddd",
     padding: "8px",
+    textAlign: "left",
   };
 
   return (
